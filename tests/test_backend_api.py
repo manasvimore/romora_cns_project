@@ -114,7 +114,7 @@ def test_send_rejects_missing_or_invalid_inputs():
         "/send",
         data={
             "sender_identity_id": sender["identity_id"],
-            "receiver_rsa_public_key": "not a PEM key",
+            "receiver_rsa_public_key": "not a PEM key",  
             "message": "message",
         },
         files={"cover_image": ("cover.png", _png_bytes(), "image/png")},
